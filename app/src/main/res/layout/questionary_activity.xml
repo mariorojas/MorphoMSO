@@ -1,0 +1,61 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@drawable/dossier_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/square"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:textSize="25dp"
+        android:textColor="@color/bgYellow"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Partes del formulario"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_below="@+id/title"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/listSections"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+
+    <ImageButton
+        android:id="@+id/saveQuestionary"
+        android:layout_width="90dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/save_selector"
+        android:layout_alignParentRight="true"
+        android:layout_height="90dp" />
+
+    <ImageButton
+        android:id="@+id/menuButton"
+        android:layout_width="90dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:layout_marginLeft="15dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/menu_selector"
+        android:layout_height="90dp" />
+
+</RelativeLayout>

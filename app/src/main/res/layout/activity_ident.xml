@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/square"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sectionTitle"
+        android:textStyle="bold"
+        android:textColor="@color/bgDark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:text="Identificación"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:id="@+id/resultados"
+        android:visibility="gone"
+        android:layout_margin="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="400dp"
+            android:gravity="center"
+            android:text="¡Autenticación Satisfactoria!"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/bgDark"
+            android:background="@drawable/rounded_curner_good_question"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/textResultados"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical|left"
+            android:background="@drawable/rounded_finger_normal"
+            android:layout_width="400dp"
+            android:layout_height="200dp" />
+
+        <ImageView
+            android:id="@+id/customerIMG"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_finger_normal"
+            android:layout_width="300dp"
+            android:paddingLeft="20dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="500dp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/itemContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/saveButton">
+
+    </FrameLayout>
+
+
+    <ImageButton
+        android:id="@+id/saveButton"
+        android:layout_width="50dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:padding="50dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/save_selector"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:background="@drawable/main_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/back"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:background="@drawable/main_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

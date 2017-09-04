@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lytValidations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/lblValidationName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="Nombre:" />
+
+        <TextView
+            android:id="@+id/lblValidationFirstSurname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="Apellido Paterno:" />
+
+        <TextView
+            android:id="@+id/lblValidationSecondSurname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="Apellido Paterno:" />
+
+        <TextView
+            android:id="@+id/lblValidationOcr"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="OCR:" />
+
+        <TextView
+            android:id="@+id/lblValidationScore"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="Puntación de Coincidencia:" />
+
+        <TextView
+            android:id="@+id/lblValidationPorc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="Porcentaje de Coincidencia:" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/lytValidations"
+        android:layout_weight="1"
+        android:text="Enrolar" />
+
+</RelativeLayout>

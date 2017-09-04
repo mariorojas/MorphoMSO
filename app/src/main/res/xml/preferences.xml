@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Settings" >
+
+        <EditTextPreference
+            android:dialogTitle="Enter the IP address of WebService"
+            android:key="@string/demoUrl_KEY"
+            android:inputType="number|textPostalAddress"
+            android:summary="Address URI of the ATM WS"
+            android:title="Middle Ware WS IP" />
+
+        <EditTextPreference
+            android:dialogTitle="Enter the hostname of WebService"
+            android:key="@string/demoHost"
+            android:inputType="textNoSuggestions"
+            android:summary="Host name of the WS"
+            android:title="Hostname WS" />
+
+        <EditTextPreference
+            android:dialogTitle="Enter the port number of WebService"
+            android:key="@string/portHost"
+            android:inputType="number"
+            android:summary="Port number of the WS"
+            android:title="Port WS" />
+
+        <CheckBoxPreference
+            android:dialogTitle="Fingerprint capabilities"
+            android:key="@string/fingerprint_KEY"
+            android:summary="Do you like use the fingerprint capabilities to Enroll, Identification and Authentication process?"
+            android:title="FINGERPRINT" />
+
+        <CheckBoxPreference
+            android:dialogTitle="Facial capabilities"
+            android:key="@string/facial_KEY"
+            android:summary="Do you like use the facial capabilities to Enroll, Identification and Authentication process?"
+            android:title="FACIAL" />
+
+        <CheckBoxPreference
+            android:dialogTitle="Voice capabilities"
+            android:key="@string/voice_KEY"
+            android:summary="Do you like use the voice capabilities to Enroll, Identification and Authentication process?"
+            android:title="VOICE" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- default -->
+    <item android:state_pressed="false" android:state_focused="false">
+        <shape >
+            <solid
+                android:color="@color/bgDark" />
+            <corners
+                android:bottomLeftRadius="5dip"
+                android:topRightRadius="5dip"
+                android:topLeftRadius="5dip"
+                android:bottomRightRadius="5dip"/>
+            <padding
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp"
+                android:bottom="10dp" />
+        </shape>
+    </item>
+   
+    <!-- button des availabe -->
+     <item android:state_enabled="false" >
+        <shape >
+            <solid
+                android:color="@color/bgDark" />
+            <corners
+                android:bottomLeftRadius="5dip"
+                android:topRightRadius="5dip"
+                android:topLeftRadius="5dip"
+                android:bottomRightRadius="5dip"/>
+            <padding
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp"
+                android:bottom="10dp" />
+        </shape>
+    </item>
+    
+    <!-- button focused -->
+    <item android:state_pressed="false" android:state_focused="true">
+        <shape >
+            <solid
+                android:color="@color/answer" />
+            <corners
+                android:bottomLeftRadius="5dip"
+                android:topRightRadius="5dip"
+                android:topLeftRadius="5dip"
+                android:bottomRightRadius="5dip"/>
+            <padding
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp"
+                android:bottom="10dp" />
+        </shape>
+    </item>
+   
+   <!-- button pressed -->
+    <item android:state_pressed="true" android:state_focused="false">
+        <shape >
+            <solid
+                android:color="@color/answer" />
+            <corners
+                android:bottomLeftRadius="12dip"
+                android:topRightRadius="12dip"
+                android:topLeftRadius="12dip"
+                android:bottomRightRadius="12dip"/>
+            <padding
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp"
+                android:bottom="10dp" />
+        </shape>
+    </item> 
+</selector>

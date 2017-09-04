@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sectionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Capturar de índices"
+        android:textColor="@color/bgDark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/handsContent"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/enrolButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/main_button_selector"
+            android:text="Terminar Captura"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <!--Fingers indicators-->
+
+        <com.morpho.demo.customs.FingerIndicator
+            android:id="@+id/littleLeft"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="55dp" />
+
+        <com.morpho.demo.customs.FingerIndicator
+            android:id="@+id/ringLeft"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="205dp"
+            android:layout_marginTop="30dp" />
+
+        <com.morpho.demo.customs.FingerIndicator
+            android:id="@+id/middletLeft"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="20dp" />
+
+        <com.morpho.demo.customs.FingerIndicator
+            android:id="@+id/indexLeft"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="35dp" />
+
+        <com.morpho.demo.customs.FingerIndicator
+            android:id="@+id/thumbLeft"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="125dp"
+            android:layout_marginLeft="420dp" />
+
+        <com.morpho.demo.customs.FingerIndicator
+            android:id="@+id/thumbRight"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="135dp"
+            android:layout_marginRight="410dp" />
+
+        <com.morpho.demo.customs.FingerIndicator
+            android:id="@+id/indexRight"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="340dp"
+            android:layout_marginTop="25dp" />
+
+        <com.morpho.demo.customs.FingerIndicator
+            android:id="@+id/middletRight"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="265dp"
+            android:layout_marginTop="10dp" />
+
+        <com.morpho.demo.customs.FingerIndicator
+            android:id="@+id/ringRight"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="195dp"
+            android:layout_marginTop="20dp" />
+
+        <com.morpho.demo.customs.FingerIndicator
+            android:id="@+id/littleRight"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="130dp"
+            android:layout_marginTop="45dp" />
+
+        <!-- /Fingers-indicators-->
+
+        <ImageView
+            android:id="@+id/hands"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hands2" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fingerCont"
+        android:layout_below="@+id/sectionTitle"
+        android:layout_above="@+id/handsContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgFP"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/vertical_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="20dp"
+                android:max="100"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/txtMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Estatus"
+                android:textColor="@android:color/secondary_text_light" />
+
+
+            <TextView
+                android:id="@+id/txtResultado"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/secondary_text_light" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

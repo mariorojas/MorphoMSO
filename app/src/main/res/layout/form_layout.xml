@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/square"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/settings_mbss"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/main_button_selector"
+        android:text="Ajustes"
+        android:textColor="@color/neutro"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/fingerVerification"
+            android:background="@drawable/main_button"
+            android:layout_width="match_parent"
+            android:text="Enrolar"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_height="60dp" />
+
+        <!--
+        <Button
+            android:id="@+id/newForm"
+            android:background="@drawable/main_button"
+            android:layout_width="match_parent"
+            android:text="@string/newForm"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_height="60dp" />
+        -->
+
+        <Button
+            android:id="@+id/seeMissing"
+            android:background="@drawable/main_button"
+            android:layout_width="match_parent"
+            android:text="@string/seeMissing"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_height="60dp" />
+
+        <Button
+            android:id="@+id/seeDone"
+            android:background="@drawable/main_button"
+            android:layout_width="match_parent"
+            android:text="@string/seeDone"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_height="60dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="¿Qué quieres hacer?"
+        android:textSize="20dp"
+        android:textColor="@color/answer"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+</RelativeLayout>

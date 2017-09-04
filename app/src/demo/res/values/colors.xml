@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="bgQ">#CCE5FF</color>
+    <color name="bgQGood">#CCFFCC</color>
+    <color name="green">#01DF01</color>
+    <color name="red">#FE2E2E</color>
+    <color name="answer">#606060</color>
+    <color name="neutro">#F2F2F2</color>
+    <color name="bgDark">#2e84b7</color>
+    <color name="bgYellow">#67686a</color>
+
+</resources>

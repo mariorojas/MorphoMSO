@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sectionTitle"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="Grabación de audios"
+        android:textColor="@color/bgDark"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/frase"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:text="@string/phrase"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/bgDark"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/confirmAudios"
+        android:text="Confirmar audios"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:background="@drawable/main_button_selector"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="250dp"
+        android:layout_height="60dp" />
+
+    <RelativeLayout
+        android:layout_width="600dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/startRecord1"
+            android:background="@drawable/main_button_selector"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Iniciar grabación Audio 1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/startRecord2"
+            android:background="@drawable/main_button_selector"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/startRecord1"
+            android:textColor="@color/white"
+            android:text="Iniciar grabación Audio 2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/startRecord3"
+            android:background="@drawable/main_button_selector"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/startRecord2"
+            android:textColor="@color/white"
+            android:text="Iniciar grabación Audio 3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/startRecord4"
+            android:background="@drawable/main_button_selector"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/startRecord3"
+            android:textColor="@color/white"
+            android:text="Iniciar grabación Audio 4"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/play1"
+            android:layout_width="50dp"
+            android:visibility="gone"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@+id/startRecord1"
+            android:background="@drawable/play_button"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/play2"
+            android:layout_width="50dp"
+            android:layout_marginLeft="100dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/startRecord2"
+            android:layout_alignTop="@+id/startRecord2"
+            android:background="@drawable/play_button"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/play3"
+            android:layout_width="50dp"
+            android:layout_marginLeft="100dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/startRecord3"
+            android:layout_alignTop="@+id/startRecord3"
+            android:background="@drawable/play_button"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/play4"
+            android:layout_width="50dp"
+            android:layout_marginLeft="100dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/startRecord4"
+            android:layout_alignTop="@+id/startRecord4"
+            android:background="@drawable/play_button"
+            android:layout_height="50dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

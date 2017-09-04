@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/outSide"
+        android:alpha="0.6"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:id="@+id/dateContent"
+        android:layout_width="350dp"
+        android:alpha="1.0"
+        android:background="@drawable/rounded_curner_mandatory_question"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/menuTitle"
+            android:layout_width="wrap_content"
+            android:text="@string/menuTitle"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/bgDark"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_margin="10dp"
+            android:layout_below="@+id/menuTitle"
+            android:layout_width="wrap_content"
+            android:background="@drawable/rounded_curner_mandatory_question"
+            android:layout_centerVertical="true"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/listOptions"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

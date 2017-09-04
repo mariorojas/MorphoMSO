@@ -1,0 +1,69 @@
+<!--
+  Copyright 2012 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">MorphoMSO</string>
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="name">Nombre</string>
+    <string name="lastname">Apellido Pat.</string>
+    <string name="apeMat">Apellido Mat.</string>
+    <string name="IDuser">OCR:</string>
+    <string name="clean">Limpiar</string>
+    <string name="result">Resultado</string>
+    <string name="inst">Para poder realizar movimientos en tu cuenta, es necesario autenticarse con tu huella digital, y posteriormente con tu cara.</string>
+    <string name="settings_mbss">Capabilities configuration</string>
+    <string name="newForm">Enrolar</string>
+    <string name="seeMissing">Autenticar</string>
+    <string name="seeDone">Identificación</string>
+    <string name="menuTitle">Elige una opción</string>
+    <string name="validSignature">Validar Firma</string>
+    <string name="validate">Validar</string>
+    <string name="save">Guardar</string>
+    <string name="continueTag">Continuar</string>
+    <string name="answer">Respuesta:</string>
+    <string name="take_picture">Tomar Foto</string>
+    <string name="verif">Verificar Cédula</string>
+    <string name="chooseOptions">Elige una opción</string>
+    <string name="chooseDate">Click para elegir fecha</string>
+    <string name="chooseDateTitle">Elige la fecha</string>
+    <string name="signatureTitle">Firma en el cuadro blanco</string>
+    <string name="dummy_section_text">Section %1d is just a dummy section.</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="capture_your_biometric_information">Capture your biometric information</string>
+    <string name="demo_external_activity">Demo External Activity</string>
+    <string name="demo_collection">Demo Collection</string>
+    <string name="phrase">La frase que se debe decir, cada vez es: CON BANCOMER MI VOZ ES ACCESO SEGURO</string>
+
+    <string name="mbssUrl_KEY">paramIPWS</string>
+    <string name="demoUrl_KEY">paramWS</string>
+    <string name="demoHost">paramHost</string>
+    <string name="portHost">portHost</string>
+    <string name="cardUrl_KEY">paramWSCard</string>
+    <string name="fingerprint_KEY">fingerprint_type</string>
+    <string name="facial_KEY">facial_type</string>
+    <string name="voice_KEY">voice_type</string>
+
+    <string-array name="INESexo">
+        <item>SELECCIONAR</item>
+        <item>H</item>
+        <item>M</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

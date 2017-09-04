@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/audioCont"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/inst"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/sectionTitle"
+            android:layout_marginTop="20dp"
+            android:text="La frase que se debe decir, cada vez es: MI VOICE IS THE KEY THAT I DON'T HAVE TO REMEMBER "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sectionTitle"
+            android:layout_marginTop="20dp"
+            android:text="Recording Point: -"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/micImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/text1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@android:drawable/presence_audio_online" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/micImage"
+            android:id="@+id/linear1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/start"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_button_selector"
+                android:text="Iniciar grabación" />
+
+            <Button
+                android:id="@+id/stop"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:background="@drawable/main_button_selector"
+                android:enabled="false"
+                android:text="Detener grabación" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/linear1"
+            android:id="@+id/audiosList"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/audio1Ind"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:text="Audio grabado"
+                android:drawableRight="@drawable/ok"
+                android:drawablePadding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/confirm"
+                android:text="Validar"
+                android:layout_marginLeft="60dp"
+                android:textColor="@color/white"
+                android:background="@drawable/main_button_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/choosen"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/indi"
+            android:layout_width="wrap_content"
+            android:textSize="30dp"
+            android:text="Elige el tipo de autenticación"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_below="@+id/indi"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/week"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:text="Autenticación"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/main_button_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/strong"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:text="Autenticación Fuerte"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/main_button_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/superStrong"
+                android:textSize="20dp"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:text="Autenticación Más Fuerte"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/main_button_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/resultados"
+        android:visibility="gone"
+        android:layout_margin="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="400dp"
+            android:gravity="center"
+            android:text="¡Autenticación Satisfactoria!"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/bgDark"
+            android:background="@drawable/rounded_curner_good_question"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/textResultados"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical|left"
+            android:background="@drawable/rounded_finger_normal"
+            android:layout_width="400dp"
+            android:layout_height="200dp" />
+
+        <ImageView
+            android:id="@+id/customerIMG"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_finger_normal"
+            android:layout_width="300dp"
+            android:paddingLeft="20dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="500dp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/initial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/captureFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:layout_weight="0.60"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imgPreviewPhoto"
+                    android:layout_width="150dp"
+                    android:layout_height="190dp"
+                    android:scaleType="fitXY" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.60"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btnCapturePhoto"
+                        android:layout_width="128dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/main_button_selector"
+                        android:text="@string/take_picture"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/fingerCont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0.60"
+            android:visibility="gone"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imgFP"
+                    android:layout_width="150dp"
+                    android:layout_height="190dp"
+                    android:scaleType="fitXY" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/vertical_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:max="100"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/txtMensaje"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_margin="5dp"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Estatus"
+                android:textColor="@android:color/secondary_text_light" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.60"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal" >
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btnF2"
+                        android:layout_width="36dp"
+                        android:layout_height="87dp"
+                        android:layout_weight="166.67"
+                        android:background="@drawable/fingerlayer_todo" />
+
+                    <TextView
+                        android:id="@+id/txtf2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="50"
+                        android:gravity="center"
+                        android:text="Índice derecho"
+                        android:textColor="@android:color/secondary_text_light" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.60"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.60"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/verifCedula"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/idCustomer"
+                        android:hint="ID de cliente"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btnCodigoBarras"
+                        android:layout_marginTop="20dp"
+                        android:text="Continuar"
+                        android:background="@drawable/main_button_selector"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="247dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtResultado"
+                    android:layout_width="256dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:scrollbars="horizontal|vertical"
+                    android:text="@string/inst"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.32"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/verifCont"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="18dp"
+                        android:text="@string/capture_your_biometric_information" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ProgressBar
+                        android:id="@+id/progressBar1"
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/btnCapture"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="30dp"
+                        android:background="@drawable/main_button_selector"
+                        android:text="@string/validate"
+                        android:textColor="#FFFFFF" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

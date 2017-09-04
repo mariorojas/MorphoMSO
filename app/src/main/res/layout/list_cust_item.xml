@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/item"
+    android:layout_margin="30dp"
+    android:padding="5dp"
+    android:layout_height="150dp"
+    android:background="@drawable/rounded_curner_question">
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="500dp"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/imageCust"
+        android:background="@drawable/rounded_finger_normal"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:padding="3dp"
+        android:layout_width="140dp"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

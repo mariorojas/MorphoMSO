@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/neutro"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/square"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sectionTitle"
+        android:textStyle="bold"
+        android:textColor="@color/bgDark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="Autenticación"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:id="@+id/resultados"
+        android:visibility="gone"
+        android:layout_margin="25dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="¡Autenticación Satisfactoria!"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/bgDark"
+            android:background="@drawable/rounded_curner_good_question"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/textResultados"
+            android:textColor="@color/white"
+            android:layout_marginTop="110dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical|left"
+            android:background="@drawable/rounded_finger_normal"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <ImageView
+            android:id="@+id/customerIMG"
+            android:background="@drawable/rounded_finger_normal"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textResultados"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_height="120dp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/itemContent"
+        android:visibility="gone"
+        android:layout_below="@+id/sectionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+    <ImageButton
+        android:id="@+id/saveButton"
+        android:layout_width="50dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:padding="50dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/save_selector"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@drawable/main_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@drawable/main_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:id="@+id/idContent"
+        android:layout_width="400dp"
+        android:orientation="vertical"
+        android:padding="50dp"
+        android:background="@drawable/rounded_curner_question"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/bgDark"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:text="Ingresa el id de cliente"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/clientID"
+            android:gravity="center"
+            android:background="@drawable/rounded_curner_question"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="id de cliente"
+            android:layout_width="200dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/checkID"
+            android:text="Continuar"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:background="@drawable/main_button_selector"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rejected"
+        android:layout_width="400dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="50dp"
+        android:background="@drawable/rounded_curner_question"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/rejectedTxt"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/bgDark"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:text="Ingresa el id de cliente"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/pass"
+            android:text="Aceptar"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:background="@drawable/main_button_selector"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
